@@ -17,11 +17,9 @@ Koristi H2 bazu u memoriji i JPA za rad sa podacima.
 - `/books` - CRUD operacije nad knjigama
 
 ## Tehnologije
-- Java 17 (ili verzija koju koristiš)
+- Java 17 
 - Spring Boot
 - Spring Data JPA
 - H2 Database
 - Maven
 
-## License
-Ovo je demo projekat, slobodno koristi i prilagodi.
