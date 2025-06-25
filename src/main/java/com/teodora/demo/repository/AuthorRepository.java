@@ -1,2 +1,7 @@
-package com.teodora.demo.repository;public class AuthorRepository {
+package com.teodora.demo.repository;
+
+import com.teodora.demo.model.Author;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AuthorRepository extends JpaRepository<Author, Long> {
 }
