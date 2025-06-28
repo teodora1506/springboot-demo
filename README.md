@@ -24,5 +24,3 @@ mvn spring-boot:run
 - Spring Data JPA
 - H2 Database
 - Maven
-
-## Neki drugi komentar
