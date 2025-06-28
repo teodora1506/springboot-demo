@@ -4,8 +4,8 @@ import com.teodora.demo.model.Book;
 import com.teodora.demo.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.teodora.demo.model.BookDto;
 
-import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -17,8 +17,8 @@ public class BookController {
 
     // GET /books - dobavi sve knjige
     @GetMapping
-    public List<Book> getAllBooks() {
-        return bookRepository.findAll();
+    public java.util.List<BookDto> getAllBooks() {
+        return bookRepository.findAll().stream().map(BookDto::toDto).toList();
     }
 
     // GET /books/{id} - dobavi knjigu po ID-ju
