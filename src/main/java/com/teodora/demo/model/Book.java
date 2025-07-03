@@ -11,12 +11,10 @@ public class Book {
 
     private String title;
 
-    // Veza sa autorom – više knjiga može imati jednog autora
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
 
-    // --- Konstruktori ---
     public Book() {}
 
     public Book(String title, Author author) {
@@ -24,7 +22,6 @@ public class Book {
         this.author = author;
     }
 
-    // --- Getteri i setteri ---
     public Long getId() {
         return id;
     }
