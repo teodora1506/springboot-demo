@@ -1,3 +1,4 @@
+
 package com.teodora.demo.service.impl;
 
 import com.teodora.demo.dto.BookRequest;
@@ -71,4 +72,3 @@ public class BookServiceImpl implements BookService {
 
         bookRepository.deleteById(id);
     }
-}
