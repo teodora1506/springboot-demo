@@ -64,6 +64,7 @@ public class BookServiceImpl implements BookService {
 
         return BookResponse.fromEntity(bookRepository.save(book));
     }
+
     @Override
     public void deleteBook(Long id) {
         if (!bookRepository.existsById(id)) {
@@ -72,3 +73,4 @@ public class BookServiceImpl implements BookService {
 
         bookRepository.deleteById(id);
     }
+}
